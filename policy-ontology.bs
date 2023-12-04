@@ -1,0 +1,71 @@
+<pre class='metadata'>
+Title: Policy Ontology
+Shortname: policy
+Level: 1
+Status: UD
+URL: https://w3id.org/policy
+Markup Shorthands: markdown yes
+Editor: Ieben Smessaert, https://smessaert.be
+Repository: https://github.com/smessie/policy
+Abstract: The Policy ontology describes missing classes and properties to be able to define policies that needs to be executed.
+</pre>
+
+# Namespace
+
+The Policy ontology namespace is [https://w3id.org/policy#](https://w3id.org/policy).
+
+The preferred prefix is `pol:`.
+
+The discussed ontology's version is 1.0.0.
+
+
+# Event
+
+An Event (`pol:Event`) declares an event: something that occured on a Thing.
+
+The Submit event (`pol:Submit`) is a type of event that describes the occurence of a submission.
+
+To connect a Thing with the Event, the event property (`pol:event`) is used.
+
+<div class="example" highlight="turtle">
+```turtle
+ex:T1 pol:event pol:Submit .
+```
+</div>
+
+
+# Policy
+
+To associate a Thing with a Policy Execution (`fno:Execution`), the policy property (`pol:policy`) is used.
+
+<div class="example" highlight="turtle">
+```turtle
+ex:HttpPolicy pol:policy [
+  a fno:Execution ;
+  fno:executes http:Request ;
+  http:methodName "POST" ;
+  http:requestURI <https://httpbin.org/post> ;
+  http:headers (
+    [
+      http:fieldName "Content-Type" ;
+      http:fieldValue "application/ld+json"
+    ]
+  )
+] .
+```
+</div>
+
+
+# Redirect
+
+A Redirect (`pol:Redirect`) defines a function that redirects to a specified URL on execution.
+
+<div class="example" highlight="turtle">
+```turtle
+ex:RedirectPolicy pol:policy [
+  a fno:Execution ;
+  fno:executes pol:Redirect ;
+  http:requestURI <https://example.org/>
+] .
+```
+</div>
