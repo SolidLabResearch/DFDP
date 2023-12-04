@@ -2,7 +2,7 @@
 Title: Policy Ontology
 Shortname: policy
 Level: 1
-Status: UD
+Status: LD
 URL: https://w3id.org/policy
 Markup Shorthands: markdown yes
 Editor: Ieben Smessaert, https://smessaert.be
