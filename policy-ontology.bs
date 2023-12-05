@@ -3,16 +3,16 @@ Title: Policy Ontology
 Shortname: policy
 Level: 1
 Status: LD
-URL: https://w3id.org/policy
+URL: https://w3id.org/DFDP/policy
 Markup Shorthands: markdown yes
 Editor: Ieben Smessaert, https://smessaert.be
-Repository: https://github.com/smessie/policy
+Repository: https://github.com/smessie/DFDP
 Abstract: The Policy ontology describes missing classes and properties to be able to define policies that needs to be executed.
 </pre>
 
 # Namespace
 
-The Policy ontology namespace is [https://w3id.org/policy#](https://w3id.org/policy).
+The Policy ontology namespace is [https://w3id.org/DFDP/policy#](https://w3id.org/DFDP/policy#).
 
 The preferred prefix is `pol:`.
 
