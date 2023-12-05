@@ -31,7 +31,7 @@ jobs:
           # The source file
           source: policy-ontology.bs #
           # The destination file
-          destination: index.html
+          destination: policy/index.html
           
      # Publish to gh-pages
       - name: Publish HTML to GitHub Pages
