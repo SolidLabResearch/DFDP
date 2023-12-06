@@ -6,7 +6,7 @@ Status: LD
 URL: https://w3id.org/DFDP/policy
 Markup Shorthands: markdown yes
 Editor: Ieben Smessaert, https://smessaert.be
-Repository: https://github.com/smessie/DFDP
+Repository: https://github.com/SolidLabResearch/DFDP
 Abstract: The Policy ontology describes missing classes and properties to be able to define policies that needs to be executed.
 </pre>
 
