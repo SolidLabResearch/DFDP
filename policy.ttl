@@ -1,4 +1,4 @@
-@prefix : <https://w3.org/DFDP/policy#> .
+@prefix : <https://w3id.org/DFDP/policy#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix fno: <https://w3id.org/function/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -10,9 +10,9 @@
 @prefix schema: <http://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@base <https://w3.org/DFDP/policy#> .
+@base <https://w3id.org/DFDP/policy#> .
 
-<https://w3.org/DFDP/policy#> rdf:type owl:Ontology ;
+<https://w3id.org/DFDP/policy#> rdf:type owl:Ontology ;
                           dc:description "An ontology for Policy description. It provides the missing classes and properties to be able to define policies that needs to be executed." ;
                           dc:title "Policy Ontology" ;
                           dcterms:creator <https://solid.smessie.com/profile/card#me> ;
@@ -21,9 +21,9 @@
                           dcterms:modified "2023-12-04"^^xsd:date ;
                           dcterms:issued "2023-12-04"^^xsd:date ;
                           vann:preferredNamespacePrefix "pol" ;
-                          vann:preferredNamespaceUri "https://w3.org/DFDP/policy#" ;
+                          vann:preferredNamespaceUri "https://w3id.org/DFDP/policy#" ;
                           schema:license <http://creativecommons.org/licenses/by/4.0/> ;
-                          owl:versionIRI "https://w3.org/DFDP/policy/1.0.0" ;
+                          owl:versionIRI "https://w3id.org/DFDP/policy/1.0.0" ;
                           owl:versionInfo "1.0.0" .
 
 <https://solid.smessie.com/profile/card#me> foaf:name "Ieben Smessaert" ; foaf:mbox "ieben.smessaert@ugent.be" .
@@ -33,7 +33,7 @@
 #    Object Properties
 #################################################################
 
-###  https://w3.org/DFDP/policy#event
+###  https://w3id.org/DFDP/policy#event
 :event rdf:type owl:ObjectProperty ;
        rdfs:domain owl:Thing ;
        rdfs:range :Event ;
@@ -41,7 +41,7 @@
        rdfs:label "event" .
 
 
-###  https://w3.org/DFDP/policy#policy
+###  https://w3id.org/DFDP/policy#policy
 :policy rdf:type owl:ObjectProperty ;
         rdfs:domain owl:Thing ;
         rdfs:range fno:Execution ;
@@ -53,20 +53,20 @@
 #    Classes
 #################################################################
 
-###  https://w3.org/DFDP/policy#Event
+###  https://w3id.org/DFDP/policy#Event
 :Event rdf:type owl:Class ;
        rdfs:comment "An Event is the description of the action that occured." ;
        rdfs:label "Event" .
 
 
-###  https://w3.org/DFDP/policy#Redirect
+###  https://w3id.org/DFDP/policy#Redirect
 :Redirect rdf:type owl:Class ;
           rdfs:subClassOf fno:Function ;
           rdfs:comment "A Redirect is a function that describes a redirect to a certain URL should happen." ;
           rdfs:label "Redirect" .
 
 
-###  https://w3.org/DFDP/policy#Submit
+###  https://w3id.org/DFDP/policy#Submit
 :Submit rdf:type owl:Class ;
         rdfs:subClassOf :Event ;
         rdfs:comment "A Submit event is the type of event that describes the occurence of a submission." ;
