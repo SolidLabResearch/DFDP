@@ -21,3 +21,8 @@ FormRenderer:
 FormCli:
 - An app to fill out a form by rendering its declarative form description as text on the command line.
 - [Source](https://github.com/SolidLabResearch/FormCli)
+
+Article:
+- Article for the SDS workshop at the ESWC 2024 Conference on Declarative Form Description Pipeline (DFDP).
+- [Article](https://smessie.github.io/Article-ESWC2024-DFDP/)
+- [Source](https://github.com/smessie/Article-ESWC2024-DFDP)
